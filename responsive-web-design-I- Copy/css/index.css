@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	/* border: 1px solid grey; */
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0px 8%;
+	line-height: 1.5;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/*----------------------- Your code starts here! --------------------------------------------------------------------------------*/
+
+section {
+	padding: 4% 0%;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links {
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links a{
+	color: gray;
+	text-decoration: none;
+}
+
+.section1{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.hook h2{
+	width: 300px;
+	height: 270px;
+	font-size: 60px;
+	text-align: center;
+}
+
+.button{
+	display: flex;
+	justify-content: center;
+}
+
+.hook button{
+	background-color: white;
+	border: 1px solid black;
+	height: 35px;
+	width: 180px;
+}
+
+.section3{
+	border-top: 2px solid black;
+	padding-top: 3%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.middleImg{
+	width: 100%;
+}
+
+.middleImg img{
+	width: 100%;
+}
+
+.section2{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	padding-bottom: 3%;
+}
+
+.section2 div{
+	width: 32%;
+}
+
+.footer{
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: baseline;
+	align-items: flex-start;
+}
+
+.copyright{
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+@media (max-width: 800px){
+	body{
+		width:100%;
+		margin: 0px;
+	}
+
+	.nav{
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.logoCont{
+		padding-bottom: 2%;
+	}
+
+	.crlImg{
+		display: none;
+	}
+
+	.section3{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 500px){
+/* --For The Mobile View-- */
+	body{
+		width: 100%;
+		margin: 0px 2%;
+	}
+
+	.links{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		border-top: 1px solid gray;
+	}
+
+	.links a{
+		width: 100%;
+		padding: 2% 0%;
+		text-align: center;
+		border-bottom: 1px solid gray;
+	}
+
+	.section2{
+		
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section2 div{
+		width: 100%;
+		padding-bottom: 2%;
+	}
+}
